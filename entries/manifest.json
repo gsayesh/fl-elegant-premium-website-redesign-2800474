@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "html": "entry-1.html",
+      "width": 1600,
+      "height": 1200,
+      "scale": 2,
+      "title": "Concept A: Light & Stone, premium home builder redesign",
+      "description": "Concept A \"Light & Stone\" is a calm, warm-mineral redesign for a high-end Australian custom home builder (Ellery & Stone is a placeholder brand; your logo, copy and imagery drop straight in).\nHow it meets the brief:\n- Every page redesigned and live: Home, Projects (filterable grid + case study), About & Process, Contact (enquiry form + FAQ)\n- Fully responsive for desktop, tablet and mobile, coded mobile-first\n- Refined type: Cormorant Garamond + Manrope. Palette: Limestone #F5F2ED, Sand #E8E1D6, Stone #CFC6B8, Bronze #9A7B5B, Charcoal #2B2A28\n- Generous 8-pt spacing, premium vector architecture art (no stock photos), subtle micro-interactions: scroll reveals, button fills, image zoom, drawn underlines\n- Organised components plus a handover style guide (fonts, colours, spacing, buttons, cards, fields, motion)\nFiles: HTML/CSS/JS source, SVG artwork, style guide; pages can be imported into Figma. Revisions welcome, and I will apply it to your existing site structure.\nLive: {{LIVE_URL}}\nSource: {{REPO_URL}}",
+      "pdf": false
+    },
+    {
+      "html": "entry-2.html",
+      "width": 1600,
+      "height": 1200,
+      "scale": 2,
+      "title": "Concept B: Evening Timber, dark editorial redesign",
+      "description": "Concept B \"Evening Timber\" is a dark editorial art direction for a premium custom home builder: every home is shown at dusk, lit from within. It is a separate layout, not a recolour of Concept A.\nHow it meets the brief:\n- All pages redesigned: Home (full-bleed hero, service index, project rail, sticky process), Projects (editorial case rows), About & Process, Contact\n- Fully responsive for desktop, tablet and mobile\n- Type: Fraunces + Jost. Palette: Ink #121110, Smoke #262421, Bone #EDE6DA, Timber #A0714B, Brass #C9A86A\n- Micro-interactions: hover thumbnails on services, rotating brass CTAs, marquee, slow cinematic reveals\n- Handover style guide with tokens, spacing rules and live components\nEllery & Stone is a placeholder brand, so your copy, logo and photography drop straight in. Delivered as HTML/CSS/JS source + SVG art + style guide (importable into Figma). Revisions welcome.\nLive: {{LIVE_URL}}concept-b/\n{{LIVE_URL}}\n{{REPO_URL}}",
+      "pdf": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept A — Light &amp; Stone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1600px; height: 1200px; overflow: hidden; }
+  body { background: #E9E3D9; font-family: Manrope, sans-serif; color: #5E5A55; position: relative; font-feature-settings: "lnum" 1; }
+  .serif { font-family: "Cormorant Garamond", serif; font-weight: 500; color: #2B2A28; }
+  em { font-style: italic; color: #7A5F44; }
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #7A5F44; display: flex; align-items: center; gap: 12px; }
+  .eyebrow::before { content: ""; width: 32px; height: 1px; background: currentColor; }
+
+  .top { position: absolute; left: 56px; right: 56px; top: 40px; height: 84px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .top h1 { font-size: 58px; line-height: 1; margin-top: 12px; }
+  .top .meta { text-align: right; font-size: 13px; line-height: 1.7; letter-spacing: .04em; }
+  .top .meta b { color: #2B2A28; font-weight: 600; }
+
+  .frame { position: absolute; overflow: hidden; background: #F5F2ED; box-shadow: 0 2px 4px rgba(43,42,40,.06), 0 40px 80px -30px rgba(43,42,40,.38); }
+  .frame iframe { border: 0; transform-origin: 0 0; display: block; pointer-events: none; }
+  .browser { left: 56px; top: 152px; width: 1000px; height: 652px; border-radius: 10px; }
+  .browser .bar { height: 32px; background: #FBFAF7; border-bottom: 1px solid rgba(43,42,40,.08); display: flex; align-items: center; gap: 7px; padding: 0 14px; }
+  .browser .bar i { width: 10px; height: 10px; border-radius: 50%; background: #DCD5CA; }
+  .browser .bar span { margin-left: 18px; flex: 1; max-width: 420px; height: 20px; border-radius: 10px; background: #F0ECE5; font-size: 11px; line-height: 20px; padding-left: 14px; color: #8F887E; }
+  .browser iframe { width: 1440px; height: 893px; transform: scale(.69444); }
+
+  .tablet { left: 1096px; top: 152px; width: 448px; height: 600px; border-radius: 26px; background: #2B2A28; padding: 14px; }
+  .tablet .screen { width: 420px; height: 572px; overflow: hidden; border-radius: 12px; background: #F5F2ED; }
+  .tablet iframe { width: 834px; height: 1136px; transform: scale(.5036); }
+
+  .phone { left: 1350px; top: 486px; width: 200px; height: 412px; border-radius: 30px; background: #1F1E1C; padding: 9px; box-shadow: 0 40px 70px -24px rgba(43,42,40,.55); }
+  .phone .screen { width: 182px; height: 394px; overflow: hidden; border-radius: 22px; background: #F5F2ED; }
+  .phone iframe { width: 390px; height: 844px; transform: scale(.46667); }
+
+  .label { position: absolute; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #8F887E; }
+
+  .pages { position: absolute; left: 56px; top: 848px; width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .page .thumb { position: relative; width: 235px; height: 252px; overflow: hidden; background: #F5F2ED; box-shadow: 0 24px 40px -24px rgba(43,42,40,.35); border-radius: 6px; }
+  .page iframe { border: 0; width: 1440px; height: 1544px; transform: scale(.16319); transform-origin: 0 0; pointer-events: none; }
+  .page p { margin-top: 12px; font-size: 13px; color: #2B2A28; font-weight: 600; letter-spacing: .02em; }
+  .page p span { font-weight: 400; color: #8F887E; }
+
+  .kit { position: absolute; left: 1096px; top: 930px; width: 448px; }
+  .swatches { display: flex; gap: 0; margin-top: 14px; border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 1px rgba(43,42,40,.08); }
+  .swatches div { flex: 1; height: 74px; padding: 8px 8px; font-size: 9.5px; line-height: 1.35; display: flex; flex-direction: column; justify-content: flex-end; }
+  .type { display: flex; gap: 28px; margin-top: 22px; align-items: flex-end; }
+  .type .aa { font-size: 64px; line-height: .9; }
+  .type small { display: block; font-size: 12px; color: #2B2A28; font-weight: 600; margin-top: 8px; }
+  .type small span { font-weight: 400; color: #8F887E; }
+  .foot { position: absolute; left: 56px; right: 56px; bottom: 26px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #8F887E; }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Concept A &middot; Premium website redesign</p>
+      <h1 class="serif">Light &amp; <em>Stone</em></h1>
+    </div>
+    <p class="meta"><b>Calm, warm-mineral direction for a high-end custom home builder</b><br>All pages redesigned &middot; fully responsive &middot; handover style guide included</p>
+  </header>
+
+  <span class="label" style="left:56px;top:136px">Desktop &middot; 1440</span>
+  <div class="frame browser">
+    <div class="bar"><i></i><i></i><i></i><span>elleryandstone.com.au</span></div>
+    <iframe src="../index.html" title="Concept A desktop homepage" scrolling="no"></iframe>
+  </div>
+
+  <span class="label" style="left:1096px;top:136px">Tablet &middot; 834</span>
+  <div class="frame tablet"><div class="screen"><iframe src="../projects.html" title="Concept A tablet" scrolling="no"></iframe></div></div>
+
+  <div class="frame phone"><div class="screen"><iframe src="../about.html" title="Concept A phone" scrolling="no"></iframe></div></div>
+  <span class="label" style="left:1350px;top:908px">Phone &middot; 390</span>
+
+  <div class="pages">
+    <div class="page"><div class="thumb"><iframe src="../projects.html" scrolling="no" title="Projects"></iframe></div><p>Projects <span>&middot; filterable grid + case study</span></p></div>
+    <div class="page"><div class="thumb"><iframe src="../about.html" scrolling="no" title="About"></iframe></div><p>About &amp; Process <span>&middot; team, values</span></p></div>
+    <div class="page"><div class="thumb"><iframe src="../contact.html" scrolling="no" title="Contact"></iframe></div><p>Contact <span>&middot; enquiry form, FAQ</span></p></div>
+    <div class="page"><div class="thumb"><iframe src="../styleguide.html" scrolling="no" title="Style guide"></iframe></div><p>Style guide <span>&middot; handover</span></p></div>
+  </div>
+
+  <div class="kit">
+    <p class="eyebrow">Palette &amp; type</p>
+    <div class="swatches">
+      <div style="background:#F5F2ED;color:#5E5A55">Limestone<br>#F5F2ED</div>
+      <div style="background:#E8E1D6;color:#5E5A55">Sand<br>#E8E1D6</div>
+      <div style="background:#CFC6B8;color:#2B2A28">Stone<br>#CFC6B8</div>
+      <div style="background:#9A7B5B;color:#FBFAF7">Bronze<br>#9A7B5B</div>
+      <div style="background:#5E5A55;color:#F5F2ED">Graphite<br>#5E5A55</div>
+      <div style="background:#2B2A28;color:#F5F2ED">Charcoal<br>#2B2A28</div>
+    </div>
+    <div class="type">
+      <div><span class="aa serif">Aa <em>Aa</em></span><small>Cormorant Garamond <span>&middot; headings</span></small></div>
+      <div><span class="aa" style="font-family:Manrope;font-weight:500;color:#2B2A28;font-size:54px">Aa</span><small>Manrope <span>&middot; body &amp; UI</span></small></div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Ellery &amp; Stone is a placeholder brand &mdash; your logo, copy and imagery drop straight in</span><span>Concept A / 2</span></div>
+</body>
+</html>

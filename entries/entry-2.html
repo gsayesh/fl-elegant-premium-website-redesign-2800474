@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept B — Evening Timber</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1600px; height: 1200px; overflow: hidden; }
+  body { background: radial-gradient(ellipse 900px 700px at 78% 30%, #2A221B 0%, #121110 70%); font-family: Jost, sans-serif; font-weight: 300; color: #9C958B; position: relative; }
+  .serif { font-family: Fraunces, serif; font-weight: 300; color: #EDE6DA; font-variation-settings: "opsz" 144; letter-spacing: -.02em; }
+  em { font-style: italic; color: #C9A86A; }
+  .label { font-size: 11px; font-weight: 400; letter-spacing: .26em; text-transform: uppercase; color: #C9A86A; display: flex; align-items: center; gap: 10px; }
+  .label::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1px solid currentColor; }
+  .label b { font-weight: 400; color: #9C958B; }
+
+  .side { position: absolute; left: 56px; top: 56px; width: 410px; }
+  .side h1 { font-size: 92px; line-height: .92; margin: 26px 0 26px; }
+  .side p.intro { font-size: 15.5px; line-height: 1.65; color: #B5AEA4; }
+  .pal { margin-top: 30px; border-top: 1px solid rgba(237,230,218,.12); }
+  .pal div { display: grid; grid-template-columns: 30px 1fr auto; gap: 14px; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(237,230,218,.12); font-size: 13px; color: #EDE6DA; }
+  .pal i { width: 30px; height: 30px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(237,230,218,.18); }
+  .pal code { font: 400 12px/1 Jost, sans-serif; letter-spacing: .12em; color: #9C958B; }
+  .type { display: flex; gap: 30px; margin-top: 26px; align-items: flex-end; }
+  .type .aa { font-size: 60px; line-height: .9; }
+  .type small { display: block; margin-top: 8px; font-size: 12px; color: #EDE6DA; letter-spacing: .04em; }
+  .type small span { color: #9C958B; }
+
+  .frame { position: absolute; overflow: hidden; background: #121110; box-shadow: 0 50px 90px -30px rgba(0,0,0,.8), 0 0 0 1px rgba(237,230,218,.08); }
+  .frame iframe { border: 0; transform-origin: 0 0; display: block; pointer-events: none; }
+  .browser { left: 520px; top: 56px; width: 1024px; height: 672px; border-radius: 10px; }
+  .browser .bar { height: 32px; background: #1E1C1A; display: flex; align-items: center; gap: 7px; padding: 0 14px; border-bottom: 1px solid rgba(237,230,218,.06); }
+  .browser .bar i { width: 10px; height: 10px; border-radius: 50%; background: #3A3632; }
+  .browser .bar span { margin-left: 18px; width: 380px; height: 20px; border-radius: 10px; background: #2A2724; font-size: 11px; line-height: 20px; padding-left: 14px; color: #8A8379; }
+  .browser iframe { width: 1440px; height: 900px; transform: scale(.71111); }
+
+  .phone { width: 176px; height: 362px; border-radius: 28px; background: #000; padding: 8px; }
+  .phone .screen { width: 160px; height: 346px; overflow: hidden; border-radius: 20px; }
+  .phone iframe { width: 390px; height: 843px; transform: scale(.41026); }
+  .incl { position: absolute; left: 262px; top: 800px; width: 210px; }
+  .incl ul { list-style: none; margin-top: 16px; border-top: 1px solid rgba(237,230,218,.12); }
+  .incl li { padding: 9px 0; border-bottom: 1px solid rgba(237,230,218,.12); font-size: 13.5px; color: #EDE6DA; display: flex; gap: 10px; }
+  .incl li span { color: #C9A86A; font-size: 11px; letter-spacing: .1em; padding-top: 2px; }
+
+  .tablet { left: 520px; top: 768px; width: 270px; height: 360px; border-radius: 20px; background: #000; padding: 10px; }
+  .tablet .screen { width: 250px; height: 340px; overflow: hidden; border-radius: 9px; }
+  .tablet iframe { width: 834px; height: 1134px; transform: scale(.29976); }
+
+  .thumbs { position: absolute; left: 810px; top: 768px; display: grid; grid-template-columns: repeat(3, 230px); gap: 22px; }
+  .thumb { width: 230px; height: 318px; overflow: hidden; border-radius: 6px; position: relative; box-shadow: 0 30px 50px -24px rgba(0,0,0,.8), 0 0 0 1px rgba(237,230,218,.08); }
+  .thumb iframe { border: 0; width: 1440px; height: 1991px; transform: scale(.15972); transform-origin: 0 0; pointer-events: none; }
+  .cap { margin-top: 12px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #EDE6DA; }
+  .cap span { color: #9C958B; letter-spacing: .06em; text-transform: none; font-size: 13px; }
+  .tcap { position: absolute; left: 520px; top: 1140px; }
+  .dev { position: absolute; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: #6F685F; }
+</style>
+</head>
+<body>
+  <aside class="side">
+    <p class="label">Concept B <b>/ Premium redesign</b></p>
+    <h1 class="serif">Evening<br><em>Timber</em></h1>
+    <p class="intro">A dark, editorial direction: every home shown at dusk, lit from within. Oversized serif type, a numbered service index, a swipeable project rail and brass details that feel crafted, not decorated.</p>
+    <div class="pal">
+      <div><i style="background:#121110"></i>Ink<code>#121110</code></div>
+      <div><i style="background:#262421"></i>Smoke<code>#262421</code></div>
+      <div><i style="background:#EDE6DA"></i>Bone<code>#EDE6DA</code></div>
+      <div><i style="background:#A0714B"></i>Timber<code>#A0714B</code></div>
+      <div><i style="background:#C9A86A"></i>Brass<code>#C9A86A</code></div>
+    </div>
+    <div class="type">
+      <div><span class="aa serif">Aa <em>Aa</em></span><small>Fraunces <span>&middot; display</span></small></div>
+      <div><span class="aa" style="font-family:Jost;font-weight:300;color:#EDE6DA;font-size:52px">Aa</span><small>Jost <span>&middot; text &amp; labels</span></small></div>
+    </div>
+  </aside>
+
+  <div class="frame phone" style="top:796px;left:56px"><div class="screen"><iframe src="../concept-b/index.html" scrolling="no" title="Concept B phone"></iframe></div></div>
+  <span class="dev" style="left:56px;top:1172px">Phone &middot; 390</span>
+  <div class="incl"><p class="label">Delivered</p><ul>
+    <li><span>01</span>Home</li><li><span>02</span>Projects</li><li><span>03</span>About &amp; Process</li><li><span>04</span>Contact &amp; enquiry</li><li><span>05</span>Handover style guide</li><li><span>+</span>Desktop, tablet, mobile</li>
+  </ul></div>
+
+  <div class="frame browser">
+    <div class="bar"><i></i><i></i><i></i><span>elleryandstone.com.au</span></div>
+    <iframe src="../concept-b/index.html" scrolling="no" title="Concept B desktop homepage"></iframe>
+  </div>
+  <span class="dev" style="left:520px;top:738px">Desktop &middot; 1440</span>
+
+  <div class="frame tablet"><div class="screen"><iframe src="../concept-b/projects.html" scrolling="no" title="Concept B tablet"></iframe></div></div>
+  <span class="dev" style="left:520px;top:1140px">Tablet &middot; 834</span>
+
+  <div class="thumbs">
+    <div><div class="thumb"><iframe src="../concept-b/projects.html" scrolling="no" title="Projects"></iframe></div><p class="cap">Projects <span>&middot; editorial case rows</span></p></div>
+    <div><div class="thumb"><iframe src="../concept-b/about.html" scrolling="no" title="About"></iframe></div><p class="cap">About <span>&middot; story, process, team</span></p></div>
+    <div><div class="thumb"><iframe src="../concept-b/contact.html" scrolling="no" title="Contact"></iframe></div><p class="cap">Contact <span>&middot; enquiry form</span></p></div>
+  </div>
+</body>
+</html>

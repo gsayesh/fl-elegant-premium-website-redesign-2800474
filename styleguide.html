@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style Guide & Handover — Concept A “Light & Stone”</title>
+<meta name="description" content="Fonts, colours, spacing rules and UI components for the Light & Stone website redesign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/light-stone.css">
+</head>
+<body class="page-guide">
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Ellery &amp; Stone home"><svg class="logo__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37"/><path d="M8 19 20 9.5 32 19"/><path d="M11 17v14h18V17"/><path d="M11 24h18M11 27.5h18M18 31v-7M24 27.5v3.5" stroke-width=".8"/></svg><span class="logo__word">Ellery &amp; Stone<small>Custom Home Builders</small></span></a>
+    <nav class="nav" aria-label="Primary"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About &amp; Process</a><a href="contact.html">Contact</a></nav>
+    <a class="btn header__cta" href="contact.html"><span>Book a consultation</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About &amp; Process</a><a href="contact.html">Contact</a><a class="btn" href="contact.html"><span>Book a consultation</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></nav>
+<link rel="stylesheet" href="assets/css/guide.css">
+<main class="g" style="padding-top:64px;--g-line:var(--line);--g-surface:var(--paper);--g-head:var(--charcoal);--g-accent:var(--bronze-dk);--g-invert:var(--charcoal)">
+  <div class="g-wrap">
+    <div class="g-top">
+      <div><p class="eyebrow">Handover guide &middot; Concept A</p><h1>Light &amp; Stone <em>design system</em></h1></div>
+      <div>
+        <p>Every value below exists as a CSS custom property in <code>assets/css/light-stone.css</code>, so a developer or Figma file can use the same tokens. Concept B has its own guide: <a class="link-arrow" href="concept-b/styleguide.html">Evening Timber guide <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></p>
+        <nav class="g-toc"><a href="#colour">Colour</a><a href="#type">Typography</a><a href="#space">Spacing &amp; grid</a><a href="#ui">Components</a><a href="#imagery">Imagery</a><a href="#motion">Motion</a><a href="#files">Files</a></nav>
+      </div>
+    </div>
+
+    <section class="g-sec" id="colour">
+      <header><span>01</span><h2>Colour</h2><p>A warm, mineral palette. Charcoal on limestone gives 12.8:1 contrast; graphite body copy on limestone gives 6.1:1 (both pass WCAG AA).</p></header>
+      <div class="g-swatches">
+        <div class="g-sw"><i style="background:#F5F2ED"></i><div><b>Limestone</b><code>#F5F2ED</code><br>Page background</div></div>
+        <div class="g-sw"><i style="background:#FBFAF7"></i><div><b>Paper</b><code>#FBFAF7</code><br>Cards, raised surfaces</div></div>
+        <div class="g-sw"><i style="background:#E8E1D6"></i><div><b>Sand</b><code>#E8E1D6</code><br>Alternate sections</div></div>
+        <div class="g-sw"><i style="background:#CFC6B8"></i><div><b>Stone</b><code>#CFC6B8</code><br>Borders, inputs</div></div>
+        <div class="g-sw"><i style="background:#9A7B5B"></i><div><b>Bronze</b><code>#9A7B5B</code><br>Accent, rules, icons</div></div>
+        <div class="g-sw"><i style="background:#7A5F44"></i><div><b>Bronze Deep</b><code>#7A5F44</code><br>Accent text, labels</div></div>
+        <div class="g-sw"><i style="background:#5E5A55"></i><div><b>Graphite</b><code>#5E5A55</code><br>Body copy</div></div>
+        <div class="g-sw"><i style="background:#2B2A28"></i><div><b>Charcoal</b><code>#2B2A28</code><br>Headings, buttons, dark bands</div></div>
+      </div>
+    </section>
+
+    <section class="g-sec" id="type">
+      <header><span>02</span><h2>Typography</h2><p>A refined serif for headings and statements, a clean geometric-humanist sans for everything you read. Both are free Google Fonts.</p></header>
+      <div style="display:grid;gap:32px">
+        <div class="g-fonts">
+          <div class="g-font"><small>Display &middot; Headings</small><span class="aa" style="font-family:var(--serif)">Aa <em>Aa</em></span><b style="font:500 1.6rem/1.2 var(--serif);color:var(--charcoal)">Cormorant Garamond</b><span>Medium 500 &middot; Italic 400 for emphasis &middot; lining figures on</span></div>
+          <div class="g-font"><small>Text &middot; Interface</small><span class="aa" style="font-family:var(--sans);font-weight:500">Aa</span><b style="font:600 1.2rem/1.3 var(--sans);color:var(--charcoal)">Manrope</b><span>Regular 400 &middot; Medium 500 &middot; Semibold 600 for labels</span></div>
+        </div>
+        <div class="g-scale">
+          <div><code>H1 &middot; 46&ndash;84px<br>lh 1.08 &middot; &minus;1%</code><h1 style="font-size:clamp(2.4rem,4vw,4.2rem)">Homes built <em>slowly</em></h1></div>
+          <div><code>H2 &middot; 36&ndash;56px</code><h2>Four ways to arrive at <em>home.</em></h2></div>
+          <div><code>H3 &middot; 28&ndash;36px</code><h3>Knock-Down Rebuild</h3></div>
+          <div><code>Lead &middot; 18px / 1.75</code><p class="lead" style="margin:0">We design and build architecturally led homes across Sydney.</p></div>
+          <div><code>Body &middot; 16px / 1.7</code><p style="margin:0">Honest materials, natural light and details resolved so well you never notice them.</p></div>
+          <div><code>Eyebrow &middot; 12px<br>600 &middot; +22% caps</code><p class="eyebrow" style="margin:0">Selected homes</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="g-sec" id="space">
+      <header><span>03</span><h2>Spacing &amp; grid</h2><p>An 8-point scale. Sections breathe with 72&ndash;128px vertical padding; content sits in a 1280px container with fluid 20&ndash;56px gutters.</p></header>
+      <div style="display:grid;gap:32px">
+        <div class="g-space">
+          <div><code>s1 &middot; 4</code><i style="width:4px"></i></div><div><code>s2 &middot; 8</code><i style="width:8px"></i></div>
+          <div><code>s3 &middot; 12</code><i style="width:12px"></i></div><div><code>s4 &middot; 16</code><i style="width:16px"></i></div>
+          <div><code>s5 &middot; 24</code><i style="width:24px"></i></div><div><code>s6 &middot; 32</code><i style="width:32px"></i></div>
+          <div><code>s7 &middot; 48</code><i style="width:48px"></i></div><div><code>s8 &middot; 64</code><i style="width:64px"></i></div>
+          <div><code>s9 &middot; 96</code><i style="width:96px"></i></div><div><code>s10 &middot; 128</code><i style="width:128px"></i></div>
+        </div>
+        <table class="g-table">
+          <tr><th>Breakpoint</th><th>Width</th><th>Layout</th></tr>
+          <tr><td>Mobile</td><td><code>&lt; 768px</code></td><td>Single column, menu overlay, 2-up stats and swatches</td></tr>
+          <tr><td>Tablet</td><td><code>768&ndash;1079px</code></td><td>2-column services and projects, 4-up stats, split headers</td></tr>
+          <tr><td>Desktop</td><td><code>&ge; 1080px</code></td><td>Full navigation, 4-up services, staggered 3-up projects, 5-step process</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="g-sec" id="ui">
+      <header><span>04</span><h2>Components</h2><p>Live components, rendered from the production stylesheet. Hover them to see the micro-interactions.</p></header>
+      <div class="g-grid2">
+        <div class="g-panel"><small>Buttons &amp; links</small>
+          <div class="g-row"><a class="btn" href="#ui"><span>Primary</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a class="btn btn--ghost" href="#ui"><span>Secondary</span></a></div>
+          <div class="g-row g-dark"><a class="btn btn--light" href="#ui"><span>On dark</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div>
+          <div class="g-row"><a class="link-arrow" href="#ui">Text link <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div>
+        </div>
+        <div class="g-panel"><small>Filter chips &amp; choices</small>
+          <div class="g-row"><button class="chip is-active">All homes</button><button class="chip">Custom homes</button><button class="chip">Renovations</button></div>
+          <div class="choice-row"><label class="choice"><input type="radio" name="g" checked><span>Selected</span></label><label class="choice"><input type="radio" name="g"><span>Default</span></label></div>
+        </div>
+        <div class="g-panel"><small>Form fields</small>
+          <div class="field"><label for="g1">Full name</label><input class="input" id="g1" placeholder="Placeholder text"></div>
+          <div class="field"><label for="g2">Indicative budget</label><select class="input" id="g2"><option>$1.2m &ndash; $2m</option></select></div>
+          <div class="field is-invalid"><label for="g3">Email (error state)</label><input class="input" id="g3" value="name@"><span class="field__error">Please enter a valid email.</span></div>
+        </div>
+        <div class="g-panel"><small>Project card</small>
+          <a class="project" href="projects.html"><div class="project__media"><img src="assets/art/coastal-day.svg" alt="Project card example"><span class="project__tag">Custom Home</span><span class="project__view"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span></div><div class="project__body"><h3>Whale Beach House</h3><span class="project__loc">Whale Beach</span></div><div class="project__specs"><span>5 bed</span><span>412 m&sup2;</span><span>2025</span></div></a>
+        </div>
+        <div class="g-panel" style="padding:0;background:none;border:0"><div class="services" style="grid-template-columns:1fr"><article class="service"><span class="service__num">Service card</span><svg class="service__icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 26 28 9l22 17"/><path d="M11 22v26h34V22"/><path d="M23 48V34h10v14"/></svg><h3>Custom Homes</h3><p>Icons are 56px, 1.2px stroke, drawn on a 56px grid.</p></article></div></div>
+        <div class="g-panel"><small>Stat &middot; Swatch</small><div class="stat"><b>140+</b><span>Homes handed over</span></div><div class="swatch" style="max-width:160px"><div class="swatch__tile mat-brass"></div><h4>Aged Brass</h4></div></div>
+      </div>
+    </section>
+
+    <section class="g-sec" id="imagery">
+      <header><span>05</span><h2>Imagery</h2><p>The concept uses drawn architectural illustrations so nothing reads as stock. Your photography replaces them one-for-one.</p></header>
+      <ul class="g-list">
+        <li><b>Hero:</b> 4 : 3.4 frame with an arched top (220px radius). Exterior at golden hour, the house centred and low in the frame.</li>
+        <li><b>Project cards:</b> 3 : 2, front elevation or a three-quarter view; 2400px wide WebP/JPG.</li>
+        <li><b>Case-study drawings:</b> elevations or plans in a white mount with a 12px border (they reinforce craft and the tender process).</li>
+        <li><b>Grade:</b> warm, natural, slightly desaturated; avoid blue skies and saturated greens.</li>
+      </ul>
+    </section>
+
+    <section class="g-sec" id="motion">
+      <header><span>06</span><h2>Motion</h2><p>Subtle, slow and purposeful &mdash; it signals quality rather than demanding attention.</p></header>
+      <table class="g-table">
+        <tr><th>Interaction</th><th>Spec</th></tr>
+        <tr><td>Scroll reveal</td><td>Fade + rise 28px, 1s, <code>cubic-bezier(.2,.7,.2,1)</code>, 80ms stagger</td></tr>
+        <tr><td>Primary button</td><td>Bronze fill rises from the bottom, 450ms; arrow nudges 4px</td></tr>
+        <tr><td>Nav &amp; text links</td><td>Underline draws left to right, 400ms</td></tr>
+        <tr><td>Project card</td><td>Image zoom 1.05 over 1.1s; view button scales in</td></tr>
+        <tr><td>Header</td><td>Shrinks from 84px to 68px with a hairline after 24px of scroll</td></tr>
+        <tr><td>Accessibility</td><td>All motion is disabled under <code>prefers-reduced-motion</code>; visible focus rings throughout</td></tr>
+      </table>
+    </section>
+
+    <section class="g-sec" id="files" style="border:0">
+      <header><span>07</span><h2>Files</h2><p>Plain HTML, CSS and vanilla JS. No build step, so it can be hosted anywhere, imported into Figma or translated into a CMS theme.</p></header>
+      <table class="g-table">
+        <tr><td><code>index.html, projects.html, about.html, contact.html</code></td><td>Concept A pages</td></tr>
+        <tr><td><code>concept-b/*.html</code></td><td>Concept B pages and guide</td></tr>
+        <tr><td><code>assets/css/light-stone.css</code></td><td>Tokens + components, mobile-first, commented</td></tr>
+        <tr><td><code>assets/js/site.js</code></td><td>Menu, header state, reveals, filters, testimonials, form validation</td></tr>
+        <tr><td><code>assets/art/*.svg</code></td><td>18 vector illustrations (day, dusk and line versions)</td></tr>
+      </table>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html"><svg class="logo__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="1.5" y="1.5" width="37" height="37"/><path d="M8 19 20 9.5 32 19"/><path d="M11 17v14h18V17"/><path d="M11 24h18M11 27.5h18M18 31v-7M24 27.5v3.5" stroke-width=".8"/></svg><span class="logo__word">Ellery &amp; Stone<small>Custom Home Builders</small></span></a>
+        <p style="margin-top:24px;max-width:22em">Architecturally designed homes, knock-down rebuilds and considered renovations — built with care across Sydney&rsquo;s North Shore, Northern Beaches and Inner West.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="projects.html">Projects</a></li><li><a href="about.html">About &amp; Process</a></li><li><a href="contact.html">Enquire</a></li><li><a href="styleguide.html">Style guide</a></li></ul></div>
+      <div><h4>Studio</h4><ul><li>Studio 3, 42 Harbour Lane<br>Mosman NSW 2088</li><li><a href="tel:+61290000000">(02) 9000 0000</a></li><li><a href="mailto:hello@elleryandstone.com.au">hello@elleryandstone.com.au</a></li></ul></div>
+      <div><h4>The Journal</h4><p>Seasonal notes on design, materials and building well. Four emails a year.</p>
+        <form class="footer__news" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thank you'"><input type="email" placeholder="Email address" aria-label="Email address" required><button>Subscribe</button></form></div>
+    </div>
+    <div class="footer__base"><span>&copy; <span data-year>2026</span> Ellery &amp; Stone Pty Ltd &middot; Builder Licence No. 000000C</span><span>Instagram &middot; Houzz &middot; LinkedIn</span></div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
